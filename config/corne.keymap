@@ -29,7 +29,7 @@
                               &kp LEFT_ALT  &mo 4  &mt LEFT_CONTROL ESCAPE    &kp ENTER  &lt 5 SPACE  &kp LEFT_GUI
             >;
 
-            label = "win_main";
+            label = "windows";
         };
 
         mac_main {
@@ -40,7 +40,7 @@
                         &trans  &trans  &mt LEFT_GUI ESCAPE    &trans  &lt 6 SPACE  &kp RIGHT_CONTROL
             >;
 
-            label = "mac_main";
+            label = "mac";
         };
 
         win_colemakdh {
@@ -51,7 +51,7 @@
                       &trans   &trans  &mt LEFT_CONTROL ESCAPE    &trans  &lt 5 SPACE  &kp LEFT_GUI
             >;
 
-            label = "win_colemakdh";
+            label = "win_col";
         };
 
         mac_colemakdh {
@@ -62,7 +62,7 @@
                         &trans  &trans  &mt LEFT_GUI ESCAPE    &trans  &lt 6 SPACE  &kp RIGHT_CONTROL
             >;
 
-            label = "mac_colemakdh";
+            label = "mac_col";
         };
 
         numbers_symbols {
@@ -79,7 +79,7 @@
                                                  &trans            &trans           &trans         &trans     &kp UNDERSCORE  &trans
             >;
 
-            label = "numbers_symbols";
+            label = "numbers";
         };
 
         win_nav {
@@ -118,7 +118,7 @@
                                &out OUT_TOG  &none    &none           &kp EQUAL  &kp N0        &none
             >;
 
-            label = "calc_and_bluetooth";
+            label = "calc_bt";
         };
     };
 };
