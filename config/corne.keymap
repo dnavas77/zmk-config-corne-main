@@ -79,8 +79,8 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&tog 1  &trans                  &trans  &trans              &trans                   &trans    &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &kp PRINTSCREEN  &trans
-&tog 2  &kp LG(LC(LEFT_ARROW))  &trans  &trans              &kp LG(LC(RIGHT_ARROW))  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp DELETE       &trans
+&trans  &trans                  &trans  &trans              &trans                   &trans    &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &kp PRINTSCREEN  &trans
+&trans  &kp LG(LC(LEFT_ARROW))  &trans  &trans              &kp LG(LC(RIGHT_ARROW))  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp DELETE       &trans
 &trans  &trans                  &trans  &trans              &trans                   &trans    &trans          &trans          &trans        &trans           &trans           &trans
                                         &kp LA(LC(DELETE))  &trans                   &trans    &trans          &trans          &trans
             >;
@@ -90,8 +90,8 @@
 
         mac_nav {
             bindings = <
-&tog 1  &trans  &trans  &trans  &trans  &trans          &kp LG(LEFT_ARROW)  &kp PAGE_DOWN   &kp PAGE_UP   &kp LG(RIGHT_ARROW)  &kp LS(LG(NUMBER_4))  &trans
-&tog 2  &trans  &trans  &trans  &trans  &trans          &kp LEFT_ARROW      &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW      &kp DELETE            &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &kp LG(LEFT_ARROW)  &kp PAGE_DOWN   &kp PAGE_UP   &kp LG(RIGHT_ARROW)  &kp LS(LG(NUMBER_4))  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &kp LEFT_ARROW      &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW      &kp DELETE            &trans
 &trans  &trans  &trans  &trans  &trans  &trans          &trans              &trans          &trans        &trans               &trans                &trans
                         &trans  &trans  &kp LEFT_ALT    &trans              &trans          &trans
             >;
@@ -101,9 +101,9 @@
 
         calc_and_bluetooth {
             bindings = <
-&bt BT_CLR    &kp F9  &kp F10  &kp F11       &kp F12  &bt BT_SEL 2    &none      &kp N7        &kp N8        &kp N9        &kp ASTERISK  &kp SLASH
+&bt BT_CLR    &kp F9  &kp F10  &kp F11       &kp F12  &bt BT_SEL 2    &tog 1     &kp N7        &kp N8        &kp N9        &kp ASTERISK  &kp SLASH
 &bt BT_SEL 0  &kp F5  &kp F6   &kp F7        &kp F8   &bt BT_SEL 3    &none      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS      &kp MINUS
-&bt BT_SEL 1  &kp F1  &kp F2   &kp F3        &kp F4   &bt BT_SEL 4    &none      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT       &kp COLON
+&bt BT_SEL 1  &kp F1  &kp F2   &kp F3        &kp F4   &bt BT_SEL 4    &tog 2     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT       &kp COLON
                                &out OUT_TOG  &none    &none           &kp EQUAL  &kp N0        &none
             >;
 
