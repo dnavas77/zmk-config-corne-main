@@ -23,10 +23,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E         &kp R  &kp T                      &kp Y      &kp U        &kp I         &kp O    &kp P          &kp EQUAL
-&kp BACKSPACE   &kp A  &kp S  &lt 6 D       &kp F  &kp G                      &kp H      &kp J        &kp K         &kp L    &kp SEMICOLON  &kp APOSTROPHE
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp V  &kp B                      &kp N      &kp M        &kp COMMA     &kp DOT  &kp SLASH      &kp RIGHT_SHIFT
-                              &kp LEFT_ALT  &mo 3  &mt LEFT_CONTROL ESCAPE    &kp ENTER  &lt 4 SPACE  &kp LEFT_GUI
+&kp ESCAPE      &kp Q    &kp W  &kp E         &kp R  &kp T               &kp Y      &kp U        &kp I         &kp O    &kp P          &kp EQUAL
+&kp BACKSPACE   &kp A    &kp S  &kp D         &kp F  &kp G               &kp H      &kp J        &kp K         &kp L    &kp SEMICOLON  &kp APOSTROPHE
+&kp LEFT_SHIFT  &lt 6 Z  &kp X  &kp C         &kp V  &kp B               &kp N      &kp M        &kp COMMA     &kp DOT  &kp SLASH      &kp RIGHT_SHIFT
+                                &kp LEFT_ALT  &mo 3  &kp LEFT_CONTROL    &kp ENTER  &lt 4 SPACE  &kp LEFT_GUI
             >;
 
             label = "windows";
@@ -34,10 +34,10 @@
 
         colemak-dh {
             bindings = <
-&trans  &kp Q  &kp W  &kp F    &kp P   &kp B     &kp J   &kp L   &kp U      &kp Y    &kp SEMICOLON  &trans
-&trans  &kp A  &kp R  &lt 6 S  &kp T   &kp G     &kp M   &kp N   &kp E      &kp I    &kp O          &trans
-&trans  &kp Z  &kp X  &kp C    &kp D   &kp V     &kp K   &kp H   &kp COMMA  &kp DOT  &kp SLASH      &trans
-                      &trans   &trans  &trans    &trans  &trans  &trans
+&trans  &kp Q    &kp W  &kp F   &kp P   &kp B     &kp J   &kp L   &kp U      &kp Y    &kp SEMICOLON  &trans
+&trans  &kp A    &kp R  &kp S   &kp T   &kp G     &kp M   &kp N   &kp E      &kp I    &kp O          &trans
+&trans  &lt 6 Z  &kp X  &kp C   &kp D   &kp V     &kp K   &kp H   &kp COMMA  &kp DOT  &kp SLASH      &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
 
             label = "colemak";
@@ -51,7 +51,7 @@
                         &trans  &trans  &mt LEFT_GUI ESCAPE    &trans  &lt 5 SPACE  &kp RIGHT_CONTROL
             >;
 
-            label = "mac";
+            label = "macbook";
         };
 
         numbers_symbols {
@@ -62,13 +62,13 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp BACKSLASH     &kp EXCL        &kp AT         &kp POUND         &kp DOLLAR       &kp PERCENT    &kp CARET  &kp AMPERSAND   &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS
-&kp COLON         &kp NUMBER_1    &kp NUMBER_2   &kp NUMBER_3      &kp NUMBER_4     &kp N5         &kp N6     &kp N7          &kp N8        &kp N9                &kp N0                 &kp MINUS
-&kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LESS_THAN  &kp GREATER_THAN  &kp RIGHT_BRACE  &kp TILDE      &kp GRAVE  &kp PIPE        &kp COMMA     &kp PERIOD            &kp SLASH              &kp RIGHT_BRACKET
-                                                 &trans            &trans           &trans         &trans     &kp UNDERSCORE  &trans
+&kp TAB     &kp EXCL          &kp AT          &kp POUND        &kp DOLLAR         &kp PERCENT    &kp CARET  &kp AMPERSAND   &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS
+&kp DELETE  &kp NUMBER_1      &kp NUMBER_2    &kp NUMBER_3     &kp NUMBER_4       &kp N5         &kp N6     &kp N7          &kp N8        &kp N9                &kp N0                 &kp MINUS
+&kp GRAVE   &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp TILDE      &kp COLON  &kp PIPE        &kp COMMA     &kp PERIOD            &kp SLASH              &kp BACKSLASH
+                                              &trans           &trans             &trans         &trans     &kp UNDERSCORE  &trans
             >;
 
-            label = "numbers";
+            label = "sym&num";
         };
 
         win_nav {
@@ -80,7 +80,7 @@
 
             bindings = <
 &trans  &trans                  &trans  &trans              &trans                   &trans    &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &kp PRINTSCREEN  &trans
-&trans  &kp LG(LC(LEFT_ARROW))  &trans  &trans              &kp LG(LC(RIGHT_ARROW))  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp DELETE       &trans
+&trans  &kp LG(LC(LEFT_ARROW))  &trans  &trans              &kp LG(LC(RIGHT_ARROW))  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans           &trans
 &trans  &trans                  &trans  &trans              &trans                   &trans    &trans          &trans          &trans        &trans           &trans           &trans
                                         &kp LA(LC(DELETE))  &trans                   &trans    &trans          &trans          &trans
             >;
@@ -91,7 +91,7 @@
         mac_nav {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans          &kp LG(LEFT_ARROW)  &kp PAGE_DOWN   &kp PAGE_UP   &kp LG(RIGHT_ARROW)  &kp LS(LG(NUMBER_4))  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &kp LEFT_ARROW      &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW      &kp DELETE            &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &kp LEFT_ARROW      &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW      &trans                &trans
 &trans  &trans  &trans  &trans  &trans  &trans          &trans              &trans          &trans        &trans               &trans                &trans
                         &trans  &trans  &kp LEFT_ALT    &trans              &trans          &trans
             >;
