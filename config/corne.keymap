@@ -45,10 +45,10 @@
 
         mac_main {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                 &trans  &trans       &trans             &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                 &trans  &trans       &trans             &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                 &trans  &trans       &trans             &trans  &trans  &trans
-                        &trans  &trans  &mt LEFT_GUI ESCAPE    &trans  &lt 5 SPACE  &kp RIGHT_CONTROL
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans       &trans             &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans       &trans             &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans       &trans             &trans  &trans  &trans
+                        &trans  &trans  &kp LEFT_GUI    &trans  &lt 5 SPACE  &kp RIGHT_CONTROL
             >;
 
             label = "macbook";
@@ -68,7 +68,7 @@
                                               &trans           &trans             &trans         &trans     &kp UNDERSCORE  &trans
             >;
 
-            label = "sym&num";
+            label = "symbols";
         };
 
         win_nav {
