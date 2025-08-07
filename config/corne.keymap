@@ -62,10 +62,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TILDE   &kp EXCL          &kp AT             &kp POUND     &kp DOLLAR      &kp PERCENT        &kp CARET  &kp AMPERSAND   &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS
-&kp COLON   &kp NUMBER_1      &kp NUMBER_2       &kp NUMBER_3  &kp NUMBER_4    &kp N5             &kp N6     &kp N7          &kp N8        &kp N9                &kp N0                 &kp MINUS
-&kp ESCAPE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none         &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp GRAVE  &kp PIPE        &kp COMMA     &kp PERIOD            &kp SLASH              &kp BACKSLASH
-                                                 &trans        &trans          &trans             &trans     &kp UNDERSCORE  &trans
+&kp TILDE   &kp EXCL          &kp AT          &kp POUND     &kp DOLLAR       &kp PERCENT          &kp CARET  &kp AMPERSAND   &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS
+&kp COLON   &kp NUMBER_1      &kp NUMBER_2    &kp NUMBER_3  &kp NUMBER_4     &kp N5               &kp N6     &kp N7          &kp N8        &kp N9                &kp N0                 &kp MINUS
+&kp ESCAPE  &kp LEFT_BRACKET  &kp LEFT_BRACE  &none         &kp RIGHT_BRACE  &kp RIGHT_BRACKET    &kp GRAVE  &kp PIPE        &kp COMMA     &kp PERIOD            &kp SLASH              &kp BACKSLASH
+                                              &trans        &trans           &trans               &trans     &kp UNDERSCORE  &trans
             >;
 
             label = "symbols";
@@ -79,10 +79,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans                  &trans  &trans              &trans                   &trans    &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &kp PRINTSCREEN  &trans
-&trans  &kp LG(LC(LEFT_ARROW))  &trans  &trans              &kp LG(LC(RIGHT_ARROW))  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp DELETE       &trans
-&trans  &trans                  &trans  &trans              &trans                   &trans    &trans          &trans          &trans        &trans           &trans           &trans
-                                        &kp LA(LC(DELETE))  &trans                   &trans    &trans          &trans          &trans
+&trans  &trans  &trans  &trans              &trans  &trans    &kp HOME        &kp PAGE_DOWN           &kp PAGE_UP        &kp END          &kp PRINTSCREEN  &trans
+&trans  &trans  &trans  &trans              &trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW          &kp UP_ARROW       &kp RIGHT_ARROW  &kp DELETE       &trans
+&trans  &trans  &trans  &trans              &trans  &trans    &trans          &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT))  &trans           &trans           &trans
+                        &kp LA(LC(DELETE))  &trans  &trans    &trans          &trans                  &trans
             >;
 
             label = "win_nav";
@@ -101,10 +101,10 @@
 
         calc_and_bluetooth {
             bindings = <
-&bt BT_CLR    &kp F9  &kp F10  &kp F11       &kp F12  &bt BT_SEL 2    &tog 1     &kp N7        &kp N8        &kp N9        &kp ASTERISK  &kp SLASH
-&bt BT_SEL 0  &none   &kp F6   &kp F7        &kp F8   &bt BT_SEL 3    &kp F5     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS      &kp MINUS
-&bt BT_SEL 1  &kp F1  &kp F2   &kp F3        &kp F4   &bt BT_SEL 4    &tog 2     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT       &kp COLON
-                               &out OUT_TOG  &none    &none           &kp EQUAL  &kp N0        &none
+&bt BT_CLR  &trans        &kp K_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_PLAY_PAUSE    &tog 1     &kp N7        &kp N8        &kp N9        &kp ASTERISK  &kp SLASH
+&trans      &trans        &trans        &trans             &trans           &trans              &none      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS      &kp MINUS
+&trans      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4        &tog 2     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT       &kp COLON
+                                        &out OUT_TOG       &none            &none               &kp EQUAL  &kp N0        &none
             >;
 
             label = "calc_bt";
