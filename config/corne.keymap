@@ -23,10 +23,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB         &kp Q    &kp W  &kp E         &kp R  &kp T               &kp Y      &kp U        &kp I         &kp O    &kp P          &kp EQUAL
-&kp BACKSPACE   &lt 6 A  &kp S  &kp D         &kp F  &kp G               &kp H      &kp J        &kp K         &kp L    &kp SEMICOLON  &kp APOSTROPHE
-&kp LEFT_SHIFT  &kp Z    &kp X  &kp C         &kp V  &kp B               &kp N      &kp M        &kp COMMA     &kp DOT  &kp SLASH      &kp RIGHT_SHIFT
-                                &kp LEFT_ALT  &mo 3  &kp LEFT_CONTROL    &kp ENTER  &lt 4 SPACE  &kp LEFT_GUI
+&kp TAB         &kp Q  &kp W  &kp E         &kp R  &kp T               &kp Y      &kp U        &kp I         &kp O    &kp P          &kp EQUAL
+&kp BACKSPACE   &kp A  &kp S  &kp D         &kp F  &kp G               &kp H      &kp J        &kp K         &kp L    &kp SEMICOLON  &kp APOSTROPHE
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp V  &kp B               &kp N      &kp M        &kp COMMA     &kp DOT  &kp SLASH      &kp RIGHT_SHIFT
+                              &kp LEFT_ALT  &mo 3  &kp LEFT_CONTROL    &kp ENTER  &lt 4 SPACE  &kp LEFT_GUI
             >;
 
             label = "windows";
@@ -34,10 +34,10 @@
 
         colemak-dh {
             bindings = <
-&trans  &kp Q    &kp W  &kp F   &kp P   &kp B     &kp J   &kp L   &kp U      &kp Y    &kp SEMICOLON  &trans
-&trans  &lt 6 A  &kp R  &kp S   &kp T   &kp G     &kp M   &kp N   &kp E      &kp I    &kp O          &trans
-&trans  &kp Z    &kp X  &kp C   &kp D   &kp V     &kp K   &kp H   &kp COMMA  &kp DOT  &kp SLASH      &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &kp Q  &kp W  &kp F   &kp P   &kp B     &kp J   &kp L   &kp U      &kp Y    &kp SEMICOLON  &trans
+&trans  &kp A  &kp R  &kp S   &kp T   &kp G     &kp M   &kp N   &kp E      &kp I    &kp O          &trans
+&trans  &kp Z  &kp X  &kp C   &kp D   &kp V     &kp K   &kp H   &kp COMMA  &kp DOT  &kp SLASH      &trans
+                      &trans  &trans  &trans    &trans  &trans  &trans
             >;
 
             label = "colemak";
@@ -62,10 +62,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TILDE   &kp EXCL          &kp AT          &kp POUND     &kp DOLLAR       &kp PERCENT          &kp CARET  &kp AMPERSAND   &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS
-&kp COLON   &kp NUMBER_1      &kp NUMBER_2    &kp NUMBER_3  &kp NUMBER_4     &kp N5               &kp N6     &kp N7          &kp N8        &kp N9                &kp N0                 &kp MINUS
-&kp ESCAPE  &kp LEFT_BRACKET  &kp LEFT_BRACE  &none         &kp RIGHT_BRACE  &kp RIGHT_BRACKET    &kp GRAVE  &kp PIPE        &kp COMMA     &kp PERIOD            &kp SLASH              &kp BACKSLASH
-                                              &trans        &trans           &trans               &trans     &kp UNDERSCORE  &trans
+&kp TILDE   &kp EXCL            &kp AT          &kp POUND     &kp DOLLAR       &kp PERCENT          &kp CARET  &kp AMPERSAND   &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS
+&kp ESCAPE  &kp NUMBER_1        &kp NUMBER_2    &kp NUMBER_3  &kp NUMBER_4     &kp N5               &kp N6     &kp N7          &kp N8        &kp N9                &kp N0                 &kp MINUS
+&kp GRAVE   &lt 6 LEFT_BRACKET  &kp LEFT_BRACE  &none         &kp RIGHT_BRACE  &kp RIGHT_BRACKET    &kp COLON  &kp PIPE        &kp COMMA     &kp PERIOD            &kp SLASH              &kp BACKSLASH
+                                                &trans        &trans           &trans               &trans     &kp UNDERSCORE  &trans
             >;
 
             label = "symbols";
@@ -101,10 +101,10 @@
 
         calc_and_bluetooth {
             bindings = <
-&bt BT_CLR  &trans        &kp C_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PLAY_PAUSE    &tog 1     &kp N7        &kp N8        &kp N9        &kp ASTERISK  &kp SLASH
-&trans      &trans        &trans        &trans             &trans           &trans              &none      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS      &kp MINUS
-&trans      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4        &tog 2     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT       &kp COLON
-                                        &out OUT_TOG       &none            &none               &kp EQUAL  &kp N0        &none
+&bt BT_CLR    &trans  &kp C_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PLAY_PAUSE    &tog 1     &kp N7        &kp N8        &kp N9        &kp ASTERISK  &kp SLASH
+&trans        &trans  &trans        &trans             &trans           &trans              &none      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS      &kp MINUS
+&bt BT_SEL 0  &trans  &bt BT_SEL 1  &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4        &tog 2     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT       &kp COLON
+                                    &out OUT_TOG       &none            &none               &kp EQUAL  &kp N0        &none
             >;
 
             label = "calc_bt";
