@@ -62,10 +62,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TILDE    &kp EXCL          &kp AT          &kp POUND        &kp DOLLAR         &kp PERCENT       &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS
-&kp EQUAL    &kp NUMBER_1      &kp NUMBER_2    &kp NUMBER_3     &kp NUMBER_4       &kp N5            &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &kp MINUS
-&lt 6 GRAVE  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp UNDERSCORE    &kp COLON  &kp PIPE       &kp COMMA     &kp PERIOD            &kp SLASH              &kp BACKSLASH
-                                               &trans           &trans             &trans            &trans     &trans         &trans
+&kp TILDE    &kp EXCL          &kp AT          &kp POUND        &kp DOLLAR         &kp PERCENT    &kp CARET  &kp AMPERSAND   &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
+&kp MINUS    &kp NUMBER_1      &kp NUMBER_2    &kp NUMBER_3     &kp NUMBER_4       &kp N5         &kp N6     &kp N7          &kp N8        &kp N9                &kp N0                 &kp PLUS
+&lt 6 GRAVE  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &none          &kp COLON  &kp PIPE        &kp COMMA     &kp PERIOD            &kp SLASH              &kp BACKSLASH
+                                               &trans           &trans             &trans         &trans     &kp UNDERSCORE  &trans
             >;
 
             label = "symbols";
