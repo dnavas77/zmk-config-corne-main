@@ -81,7 +81,7 @@
             bindings = <
 &trans  &trans  &trans  &trans              &trans  &kp F12    &kp HOME        &kp PAGE_DOWN           &kp PAGE_UP        &kp END          &kp PRINTSCREEN  &trans
 &trans  &trans  &trans  &trans              &trans  &kp F10    &kp LEFT_ARROW  &kp DOWN_ARROW          &kp UP_ARROW       &kp RIGHT_ARROW  &kp DELETE       &trans
-&trans  &trans  &trans  &trans              &trans  &kp F5     &trans          &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT))  &trans           &trans           &trans
+&trans  &trans  &trans  &trans              &trans  &kp F5     &trans          &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT))  &trans           &trans           &bt BT_CLR_ALL
                         &kp LA(LC(DELETE))  &trans  &trans     &trans          &trans                  &trans
             >;
 
