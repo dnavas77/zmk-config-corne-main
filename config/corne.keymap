@@ -10,7 +10,15 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        colon_combo {
+            bindings = <&kp COLON>;
+            key-positions = <32 33>;
+            layers = <3>;
+        };
+    };
 
     macros {
         bt_mac: bt_mac {
@@ -78,10 +86,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TILDE    &kp EXCL          &kp AT          &kp POUND        &kp DOLLAR         &kp PERCENT         &kp CARET  &kp AMPERSAND   &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS
-&kp MINUS    &kp NUMBER_1      &kp NUMBER_2    &kp NUMBER_3     &kp NUMBER_4       &kp N5              &kp N6     &kp N7          &kp N8        &kp N9                &kp N0                 &kp EQUAL
-&lt 6 GRAVE  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GREATER_THAN    &kp COLON  &kp PIPE        &kp COMMA     &kp PERIOD            &kp SLASH              &kp BACKSLASH
-                                               &trans           &trans             &trans              &trans     &kp UNDERSCORE  &trans
+&kp TILDE  &kp EXCL          &kp AT          &kp POUND        &kp DOLLAR         &kp PERCENT      &kp CARET         &kp AMPERSAND  &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS
+&kp PLUS   &kp NUMBER_1      &kp NUMBER_2    &kp NUMBER_3     &kp NUMBER_4       &kp N5           &kp N6            &kp N7         &kp N8          &kp N9                &kp N0                 &kp EQUAL
+&kp GRAVE  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp LESS_THAN    &kp GREATER_THAN  &kp PIPE       &kp COMMA       &kp PERIOD            &kp SLASH              &kp BACKSLASH
+                                             &mo 6            &trans             &trans           &trans            &trans         &kp UNDERSCORE
             >;
 
             label = "symbols";
