@@ -31,7 +31,8 @@
         tap_f1: tap_f1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&tap_f1 &kp F1>;
+            bindings = <&macro_tap>, <&kp F1>;
+
             label = "tap_f1";
         };
     };
