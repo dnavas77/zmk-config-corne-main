@@ -86,10 +86,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TILDE  &kp EXCL          &kp AT          &kp POUND        &kp DOLLAR         &kp PERCENT      &kp CARET         &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS
-&kp PLUS   &kp NUMBER_1      &kp NUMBER_2    &kp NUMBER_3     &kp NUMBER_4       &kp N5           &kp N6            &kp N7         &kp N8        &kp N9                &kp N0                 &kp EQUAL
-&kp GRAVE  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp LESS_THAN    &kp GREATER_THAN  &kp PIPE       &kp COMMA     &kp PERIOD            &kp SLASH              &kp BACKSLASH
-                                             &mo 6            &trans             &trans           &kp UNDERSCORE    &trans         &trans
+&kp TILDE  &trans  &trans  &kp LESS_THAN     &kp GREATER_THAN   &trans    &kp BACKSLASH   &kp N7        &kp N8        &kp N9        &kp ASTERISK  &kp SLASH
+&trans     &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans    &kp PIPE        &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS      &kp MINUS
+&kp GRAVE  &trans  &trans  &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans    &kp UNDERSCORE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT       &kp EQUAL
+                           &mo 6             &trans             &trans    &kp N0          &trans        &trans
             >;
 
             label = "symbols";
@@ -103,10 +103,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp F9  &kp F10  &kp F11             &kp F12  &none     &kp HOME        &kp PAGE_DOWN           &kp PAGE_UP        &kp END          &kp PRINTSCREEN  &trans
-&trans  &kp F5  &kp F6   &kp F7              &kp F8   &none     &kp LEFT_ARROW  &kp DOWN_ARROW          &kp UP_ARROW       &kp RIGHT_ARROW  &kp DELETE       &trans
-&trans  &kp F1  &kp F2   &kp F3              &kp F4   &none     &trans          &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT))  &trans           &trans           &trans
-                         &kp LA(LC(DELETE))  &trans   &trans    &trans          &trans                  &trans
+&trans  &trans  &trans  &trans              &trans  &trans    &kp HOME        &kp PAGE_DOWN           &kp PAGE_UP        &kp END          &kp PRINTSCREEN  &trans
+&trans  &trans  &trans  &trans              &trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW          &kp UP_ARROW       &kp RIGHT_ARROW  &kp DELETE       &trans
+&trans  &trans  &trans  &trans              &trans  &trans    &trans          &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT))  &trans           &trans           &trans
+                        &kp LA(LC(DELETE))  &trans  &trans    &trans          &trans                  &trans
             >;
 
             label = "win_nav";
@@ -114,24 +114,24 @@
 
         mac_nav {
             bindings = <
-&trans  &kp F9  &kp F10  &kp F11  &kp F12  &none           &kp LG(LEFT_ARROW)  &kp PAGE_DOWN   &kp PAGE_UP   &kp LG(RIGHT_ARROW)  &kp LS(LG(NUMBER_4))  &trans
-&trans  &kp F5  &kp F6   &kp F7   &kp F8   &none           &kp LEFT_ARROW      &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW      &kp DELETE            &trans
-&trans  &kp F1  &kp F2   &kp F3   &kp F4   &none           &trans              &trans          &trans        &trans               &trans                &trans
-                         &trans   &trans   &kp LEFT_ALT    &trans              &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &kp LG(LEFT_ARROW)  &kp PAGE_DOWN   &kp PAGE_UP   &kp LG(RIGHT_ARROW)  &kp LS(LG(NUMBER_4))  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &kp LEFT_ARROW      &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW      &kp DELETE            &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans              &trans          &trans        &trans               &trans                &trans
+                        &trans  &trans  &kp LEFT_ALT    &trans              &trans          &trans
             >;
 
             label = "mac_nav";
         };
 
-        calc_and_bluetooth {
+        Bluetooth {
             bindings = <
-&bt BT_CLR_ALL  &none    &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PLAY_PAUSE    &tog 1     &kp N7        &kp N8        &kp N9        &kp ASTERISK  &kp SLASH
-&none           &none    &none       &none              &none            &bt BT_CLR          &none      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS      &kp MINUS
-&none           &bt_mac  &bt_win     &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4        &tog 2     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT       &none
-                                     &trans             &none            &out OUT_TOG        &kp EQUAL  &kp N0        &none
+&bt BT_CLR_ALL  &none    &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PLAY_PAUSE    &tog 1  &none  &none  &none  &none  &none
+&none           &none    &none       &none              &none            &bt BT_CLR          &none   &none  &none  &none  &none  &none
+&none           &bt_mac  &bt_win     &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4        &tog 2  &none  &none  &none  &none  &none
+                                     &trans             &none            &out OUT_TOG        &none   &none  &none
             >;
 
-            label = "calc_bt";
+            label = "bluetoo";
         };
     };
 };
