@@ -11,15 +11,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        colon_combo {
-            bindings = <&kp COLON>;
-            key-positions = <32 33>;
-            layers = <3>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         bt_mac: bt_mac {
@@ -35,17 +27,24 @@
             bindings = <&bt BT_SEL 1 &to 0>;
             label = "BT_WIN";
         };
+
+        tap_f1: tap_f1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&tap_f1 &kp F1>;
+            label = "tap_f1";
+        };
     };
 
     behaviors {
-        tap_hold: tap_hold {
+        hold_tap_f1: hold_tap_f1 {
             compatible = "zmk,behavior-hold-tap";
-            label = "TAP_HOLD";
-            bindings = <&kp>, <&kp>;
+            label = "HOLD_TAP_F1";
+            bindings = <&tap_f1>, <&kp>;
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <333>;
         };
     };
 
@@ -99,10 +98,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TILDE  &kp GRAVE  &trans  &kp LESS_THAN     &kp GREATER_THAN   &trans    &kp BACKSLASH     &tap_hold F7 N7        &tap_hold F8 N8        &tap_hold F9 N9        &tap_hold F11 ASTERISK  &tap_hold F12 SLASH
-&trans     &trans     &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans    &kp PIPE          &tap_hold F4 NUMBER_4  &tap_hold F5 N5        &tap_hold F6 NUMBER_6  &kp PLUS                &kp MINUS
-&trans     &trans     &trans  &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans    &kp UNDERSCORE    &tap_hold F1 NUMBER_1  &tap_hold F2 NUMBER_2  &tap_hold F3 NUMBER_3  &kp DOT                 &kp EQUAL
-                              &mo 6             &trans             &trans    &tap_hold F10 N0  &trans                 &trans
+&kp TILDE  &kp GRAVE  &trans  &kp LESS_THAN     &kp GREATER_THAN   &trans    &kp BACKSLASH        &hold_tap_f1 F7 N7        &hold_tap_f1 F8 N8        &hold_tap_f1 F9 N9        &hold_tap_f1 F11 ASTERISK  &hold_tap_f1 F12 SLASH
+&trans     &trans     &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans    &kp PIPE             &hold_tap_f1 F4 NUMBER_4  &hold_tap_f1 F5 N5        &hold_tap_f1 F6 NUMBER_6  &kp PLUS                   &kp MINUS
+&trans     &trans     &trans  &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans    &kp UNDERSCORE       &hold_tap_f1 0 NUMBER_1   &hold_tap_f1 F2 NUMBER_2  &hold_tap_f1 F3 NUMBER_3  &kp DOT                    &kp EQUAL
+                              &mo 6             &trans             &trans    &hold_tap_f1 F10 N0  &trans                    &trans
             >;
 
             label = "symbols";
