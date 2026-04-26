@@ -123,6 +123,116 @@
             flavor = "tap-preferred";
             tapping-term-ms = <333>;
         };
+
+        hold_tap_f2: hold_tap_f2 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_F2";
+            bindings = <&tap_f2>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <333>;
+        };
+
+        hold_tap_f3: hold_tap_f3 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_F3";
+            bindings = <&tap_f3>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <333>;
+        };
+
+        hold_tap_f4: hold_tap_f4 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_F4";
+            bindings = <&tap_f4>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <333>;
+        };
+
+        hold_tap_f5: hold_tap_f5 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_F5";
+            bindings = <&tap_f5>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <333>;
+        };
+
+        hold_tap_f6: hold_tap_f6 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_F6";
+            bindings = <&tap_f6>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <333>;
+        };
+
+        hold_tap_f7: hold_tap_f7 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_F7";
+            bindings = <&tap_f7>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <333>;
+        };
+
+        hold_tap_f8: hold_tap_f8 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_F8";
+            bindings = <&tap_f8>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <333>;
+        };
+
+        hold_tap_f9: hold_tap_f9 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_F9";
+            bindings = <&tap_f9>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <333>;
+        };
+
+        hold_tap_f10: hold_tap_f10 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_F10";
+            bindings = <&tap_f10>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <333>;
+        };
+
+        hold_tap_f11: hold_tap_f11 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_F11";
+            bindings = <&tap_f11>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <333>;
+        };
+
+        hold_tap_f12: hold_tap_f12 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_F12";
+            bindings = <&tap_f12>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <333>;
+        };
     };
 
     keymap {
