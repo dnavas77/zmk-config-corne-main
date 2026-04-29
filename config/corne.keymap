@@ -135,7 +135,7 @@
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <333>;
+            tapping-term-ms = <250>;
         };
 
         hold_tap_f2: hold_tap_f2 {
@@ -145,7 +145,7 @@
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <333>;
+            tapping-term-ms = <250>;
         };
 
         hold_tap_f3: hold_tap_f3 {
@@ -155,7 +155,7 @@
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <333>;
+            tapping-term-ms = <250>;
         };
 
         hold_tap_f4: hold_tap_f4 {
@@ -165,7 +165,7 @@
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <333>;
+            tapping-term-ms = <250>;
         };
 
         hold_tap_f5: hold_tap_f5 {
@@ -175,7 +175,7 @@
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <333>;
+            tapping-term-ms = <250>;
         };
 
         hold_tap_f6: hold_tap_f6 {
@@ -185,7 +185,7 @@
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <333>;
+            tapping-term-ms = <250>;
         };
 
         hold_tap_f7: hold_tap_f7 {
@@ -195,7 +195,7 @@
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <333>;
+            tapping-term-ms = <250>;
         };
 
         hold_tap_f8: hold_tap_f8 {
@@ -205,7 +205,7 @@
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <333>;
+            tapping-term-ms = <250>;
         };
 
         hold_tap_f9: hold_tap_f9 {
@@ -215,7 +215,7 @@
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <333>;
+            tapping-term-ms = <250>;
         };
 
         hold_tap_f10: hold_tap_f10 {
@@ -225,7 +225,7 @@
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <333>;
+            tapping-term-ms = <250>;
         };
 
         hold_tap_f11: hold_tap_f11 {
@@ -235,7 +235,7 @@
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <333>;
+            tapping-term-ms = <250>;
         };
 
         hold_tap_f12: hold_tap_f12 {
@@ -245,7 +245,7 @@
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <333>;
+            tapping-term-ms = <250>;
         };
     };
 
