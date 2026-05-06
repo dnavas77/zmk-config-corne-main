@@ -303,10 +303,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp GRAVE       &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE        &kp BACKSLASH     &hold_tap_f7 F7 N7        &hold_tap_f8 F8 N8        &hold_tap_f9 F9 N9        &hold_tap_f11 F11 PLUS  &hold_tap_f12 F12 ASTERISK
-&trans  &kp LEFT_SHIFT  &kp UNDERSCORE     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp COLON        &kp PIPE          &hold_tap_f4 F4 NUMBER_4  &hold_tap_f5 F5 N5        &hold_tap_f6 F6 NUMBER_6  &kp MINUS               &kp EQUAL
-&trans  &trans          &kp PERIOD         &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LESS_THAN    &kp GREATER_THAN  &hold_tap_f1 0 NUMBER_1   &hold_tap_f2 F2 NUMBER_2  &hold_tap_f3 F3 NUMBER_3  &kp SLASH               &trans
-                                           &trans                &trans                 &trans           &trans            &hold_tap_f10 0 N0        &trans
+&none  &kp GRAVE       &kp LEFT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp RIGHT_PARENTHESIS  &kp LESS_THAN    &kp GREATER_THAN  &hold_tap_f7 F7 N7        &hold_tap_f8 F8 N8        &hold_tap_f9 F9 N9        &hold_tap_f11 F11 PLUS  &none
+&none  &kp MINUS       &kp LEFT_BRACKET      &kp PERIOD         &kp RIGHT_BRACKET      &kp COLON        &kp PIPE          &hold_tap_f4 F4 NUMBER_4  &hold_tap_f5 F5 N5        &hold_tap_f6 F6 NUMBER_6  &hold_tap_f12 0 EQUAL   &none
+&none  &kp LEFT_SHIFT  &kp LEFT_BRACE        &kp UNDERSCORE     &kp RIGHT_BRACE        &kp TILDE        &kp BACKSLASH     &hold_tap_f1 0 NUMBER_1   &hold_tap_f2 F2 NUMBER_2  &hold_tap_f3 F3 NUMBER_3  &kp SLASH               &none
+                                             &trans             &trans                 &trans           &trans            &hold_tap_f10 0 N0        &trans
             >;
 
             label = "symbols";
