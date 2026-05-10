@@ -27,14 +27,26 @@
 
         left_shift_combo {
             bindings = <&kp LEFT_SHIFT>;
-            key-positions = <16 38>;
+            key-positions = <16 37>;
             layers = <0 2 4 5 1>;
         };
 
         right_shift_combo {
             bindings = <&kp RIGHT_SHIFT>;
-            key-positions = <39 19>;
+            key-positions = <19 40>;
             layers = <0 2 1 4 5>;
+        };
+
+        right_alt_win_layer {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <39 19>;
+            layers = <0>;
+        };
+
+        right_cmd_mac_layer {
+            bindings = <&kp RIGHT_GUI>;
+            key-positions = <39 19>;
+            layers = <2>;
         };
     };
 
@@ -339,10 +351,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &trans  &trans  &trans  &trans  &trans    &kp HOME        &kp PAGE_DOWN           &kp PAGE_UP   &kp END                  &kp PRINTSCREEN  &none
-&none  &trans  &trans  &trans  &trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW          &kp UP_ARROW  &kp RIGHT_ARROW          &kp DELETE       &none
-&none  &trans  &trans  &trans  &trans  &trans    &trans          &kp LC(LG(LEFT_ARROW))  &trans        &kp LC(LG(RIGHT_ARROW))  &trans           &none
-                       &trans  &mo 6   &trans    &trans          &trans                  &trans
+&none  &none           &none  &none  &none  &none               &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &kp PRINTSCREEN  &none
+&none  &none           &none  &none  &none  &none               &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp DELETE       &none
+&none  &kp LEFT_SHIFT  &none  &none  &none  &none               &none           &none           &none         &none            &none            &none
+                              &none  &mo 6  &kp LEFT_CONTROL    &none           &none           &none
             >;
 
             label = "win_nav";
@@ -350,10 +362,10 @@
 
         mac_nav {
             bindings = <
-&none  &trans  &trans  &trans  &trans  &trans          &kp LG(LEFT_ARROW)  &kp PAGE_DOWN   &kp PAGE_UP   &kp LG(RIGHT_ARROW)  &kp LS(LG(NUMBER_4))  &none
-&none  &trans  &trans  &trans  &trans  &trans          &kp LEFT_ARROW      &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW      &kp DELETE            &none
-&none  &trans  &trans  &trans  &trans  &trans          &trans              &trans          &trans        &trans               &trans                &none
-                       &trans  &mo 6   &kp LEFT_ALT    &trans              &trans          &trans
+&none  &none           &none  &none  &none  &none           &kp LG(LEFT_ARROW)  &kp PAGE_DOWN   &kp PAGE_UP   &kp LG(RIGHT_ARROW)  &kp LS(LG(NUMBER_4))  &none
+&none  &none           &none  &none  &none  &none           &kp LEFT_ARROW      &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW      &kp DELETE            &none
+&none  &kp LEFT_SHIFT  &none  &none  &none  &none           &none               &none           &none         &none                &none                 &none
+                              &none  &mo 6  &kp LEFT_ALT    &none               &none           &none
             >;
 
             label = "mac_nav";
