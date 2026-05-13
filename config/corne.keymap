@@ -37,6 +37,18 @@
             key-positions = <32 33>;
             layers = <0 2 1>;
         };
+
+        left_shift_combo {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <15 38>;
+            layers = <0 2 1>;
+        };
+
+        right_shift_combo {
+            bindings = <&kp RIGHT_SHIFT>;
+            key-positions = <39 20>;
+            layers = <0 1 2>;
+        };
     };
 
     macros {
@@ -284,10 +296,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q             &kp W  &kp E         &kp R  &kp T               &kp Y      &kp U        &kp I       &kp O    &kp P                         &none
-&none  &mt LEFT_ALT A    &kp S  &kp D         &kp F  &kp G               &kp H      &kp J        &kp K       &kp L    &mt RIGHT_CONTROL APOSTROPHE  &none
-&none  &mt LEFT_SHIFT Z  &kp X  &kp C         &kp V  &kp B               &kp N      &kp M        &kp COMMA   &kp DOT  &mt RIGHT_SHIFT SLASH         &none
-                                &kp LEFT_GUI  &mo 3  &kp LEFT_CONTROL    &kp ENTER  &lt 4 SPACE  &kp ESCAPE
+&none  &kp Q             &kp W  &kp E         &kp R  &kp T               &kp Y      &kp U        &kp I         &kp O    &kp P                  &none
+&none  &kp A             &kp S  &kp D         &kp F  &kp G               &kp H      &kp J        &kp K         &kp L    &kp APOSTROPHE         &none
+&none  &mt LEFT_SHIFT Z  &kp X  &kp C         &kp V  &kp B               &kp N      &kp M        &kp COMMA     &kp DOT  &mt RIGHT_SHIFT SLASH  &none
+                                &kp LEFT_ALT  &mo 3  &kp LEFT_CONTROL    &kp ENTER  &lt 4 SPACE  &kp LEFT_GUI
             >;
 
             label = "windows";
@@ -306,10 +318,10 @@
 
         mac_main {
             bindings = <
-&none  &trans  &trans  &trans            &trans  &trans          &trans  &trans       &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans            &trans  &trans          &trans  &trans       &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans            &trans  &trans          &trans  &trans       &trans  &trans  &trans  &none
-                       &kp LEFT_CONTROL  &trans  &kp LEFT_GUI    &trans  &lt 5 SPACE  &trans
+&none  &trans  &trans  &trans  &trans  &trans          &trans  &trans       &trans             &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans          &trans  &trans       &trans             &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans          &trans  &trans       &trans             &trans  &trans  &none
+                       &trans  &trans  &kp LEFT_GUI    &trans  &lt 5 SPACE  &kp RIGHT_CONTROL
             >;
 
             label = "macbook";
@@ -323,10 +335,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &kp TAB         &kp LEFT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp RIGHT_PARENTHESIS  &kp LESS_THAN    &kp GREATER_THAN  &hold_tap_f7 F7 N7        &hold_tap_f8 F8 N8        &hold_tap_f9 F9 N9        &hold_tap_f11 F11 PLUS  &none
-&none  &kp BACKSPACE   &kp LEFT_BRACKET      &kp MINUS          &kp RIGHT_BRACKET      &kp COLON        &kp PIPE          &hold_tap_f4 F4 NUMBER_4  &hold_tap_f5 F5 N5        &hold_tap_f6 F6 NUMBER_6  &hold_tap_f12 0 EQUAL   &none
-&none  &kp LEFT_SHIFT  &kp LEFT_BRACE        &kp UNDERSCORE     &kp RIGHT_BRACE        &kp GRAVE        &kp BACKSLASH     &hold_tap_f1 0 NUMBER_1   &hold_tap_f2 F2 NUMBER_2  &hold_tap_f3 F3 NUMBER_3  &kp SLASH               &none
-                                             &trans             &trans                 &trans           &trans            &hold_tap_f10 0 N0        &trans
+&none  &kp TAB         &kp LEFT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp RIGHT_PARENTHESIS  &kp LESS_THAN    &kp GREATER_THAN  &hold_tap_f7 F7 N7        &hold_tap_f8 F8 N8        &hold_tap_f9 F9 N9        &hold_tap_f10 F11 PLUS  &none
+&none  &kp BACKSPACE   &kp LEFT_BRACKET      &kp MINUS          &kp RIGHT_BRACKET      &kp COLON        &kp PIPE          &hold_tap_f4 F4 NUMBER_4  &hold_tap_f5 F5 N5        &hold_tap_f6 F6 NUMBER_6  &hold_tap_f11 0 EQUAL   &none
+&none  &kp LEFT_SHIFT  &kp LEFT_BRACE        &kp UNDERSCORE     &kp RIGHT_BRACE        &kp GRAVE        &kp BACKSLASH     &hold_tap_f1 0 NUMBER_1   &hold_tap_f2 F2 NUMBER_2  &hold_tap_f3 F3 NUMBER_3  &hold_tap_f12 0 SLASH   &none
+                                             &trans             &trans                 &trans           &kp ESC           &kp N0                    &trans
             >;
 
             label = "symbols";
@@ -360,7 +372,7 @@
             label = "mac_nav";
         };
 
-        bt_mouse {
+        bluetooth {
             bindings = <
 &none  &out OUT_TOG  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PLAY_PAUSE    &tog 2  &none  &none  &none  &none  &none
 &none  &none         &none       &none              &bt BT_CLR       &bt BT_CLR_ALL      &none   &none  &none  &none  &none  &none
@@ -368,7 +380,7 @@
                                  &none              &none            &none               &none   &none  &none
             >;
 
-            label = "bt_mous";
+            label = "bluetoo";
         };
     };
 };
