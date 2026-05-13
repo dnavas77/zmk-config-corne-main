@@ -340,9 +340,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &none           &none  &none  &none  &none               &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &kp PRINTSCREEN  &none
-&none  &none           &none  &none  &none  &none               &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp DELETE       &none
-&none  &kp LEFT_SHIFT  &none  &none  &none  &none               &none           &kp TAB         &none         &none            &kp RIGHT_ALT    &none
+&none  &none           &none  &none  &none  &none               &kp HOME        &kp TAB         &kp DELETE    &kp END          &kp PRINTSCREEN  &none
+&none  &none           &none  &none  &none  &none               &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp RIGHT_ALT    &none
+&none  &kp LEFT_SHIFT  &none  &none  &none  &none               &none           &kp PAGE_DOWN   &kp PAGE_UP   &none            &none            &none
                               &none  &mo 6  &kp LEFT_CONTROL    &none           &none           &none
             >;
 
@@ -351,9 +351,9 @@
 
         mac_nav {
             bindings = <
-&none  &none           &none  &none  &none  &none           &kp LG(LEFT_ARROW)  &kp PAGE_DOWN   &kp PAGE_UP   &kp LG(RIGHT_ARROW)  &kp LS(LG(NUMBER_4))  &none
-&none  &none           &none  &none  &none  &none           &kp LEFT_ARROW      &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW      &kp DELETE            &none
-&none  &kp LEFT_SHIFT  &none  &none  &none  &none           &none               &kp TAB         &none         &none                &kp RIGHT_GUI         &none
+&none  &none           &none  &none  &none  &none           &kp LG(LEFT_ARROW)  &kp TAB         &kp DELETE    &kp LG(RIGHT_ARROW)  &kp LS(LG(NUMBER_4))  &none
+&none  &none           &none  &none  &none  &none           &kp LEFT_ARROW      &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW      &kp LEFT_GUI          &none
+&none  &kp LEFT_SHIFT  &none  &none  &none  &none           &none               &kp PAGE_DOWN   &kp PAGE_UP   &none                &none                 &none
                               &none  &mo 6  &kp LEFT_ALT    &none               &none           &none
             >;
 
