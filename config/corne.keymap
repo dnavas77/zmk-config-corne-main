@@ -21,14 +21,14 @@
         compatible = "zmk,combos";
 
         right_control_win {
-            bindings = <&kp RIGHT_CONTROL>;
-            key-positions = <40 19>;
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <19 39>;
             layers = <0>;
         };
 
         right_opt_mac {
-            bindings = <&kp RIGHT_ALT>;
-            key-positions = <40 19>;
+            bindings = <&kp RIGHT_GUI>;
+            key-positions = <19 39>;
             layers = <2>;
         };
     };
@@ -300,9 +300,9 @@
 
         mac_main {
             bindings = <
-&none  &trans  &trans  &trans            &trans  &trans          &trans  &trans       &trans  &trans  &trans                    &none
-&none  &trans  &trans  &trans            &trans  &trans          &trans  &trans       &trans  &trans  &mt RIGHT_ALT APOSTROPHE  &none
-&none  &trans  &trans  &trans            &trans  &trans          &trans  &trans       &trans  &trans  &trans                    &none
+&none  &trans  &trans  &trans            &trans  &trans          &trans  &trans       &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans            &trans  &trans          &trans  &trans       &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans            &trans  &trans          &trans  &trans       &trans  &trans  &trans  &none
                        &kp LEFT_CONTROL  &trans  &kp LEFT_GUI    &trans  &lt 5 SPACE  &trans
             >;
 
