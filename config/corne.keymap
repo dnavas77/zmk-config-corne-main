@@ -31,6 +31,12 @@
             key-positions = <19 39>;
             layers = <2>;
         };
+
+        semicolon_combo {
+            bindings = <&kp SEMI>;
+            key-positions = <32 33>;
+            layers = <0 2 1>;
+        };
     };
 
     macros {
@@ -318,7 +324,7 @@
 
             bindings = <
 &none  &kp TAB         &kp LEFT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp RIGHT_PARENTHESIS  &kp LESS_THAN    &kp GREATER_THAN  &hold_tap_f7 F7 N7        &hold_tap_f8 F8 N8        &hold_tap_f9 F9 N9        &hold_tap_f11 F11 PLUS  &none
-&none  &kp BACKSPACE   &kp LEFT_BRACKET      &kp MINUS          &kp RIGHT_BRACKET      &kp SEMICOLON    &kp PIPE          &hold_tap_f4 F4 NUMBER_4  &hold_tap_f5 F5 N5        &hold_tap_f6 F6 NUMBER_6  &hold_tap_f12 0 EQUAL   &none
+&none  &kp BACKSPACE   &kp LEFT_BRACKET      &kp MINUS          &kp RIGHT_BRACKET      &kp COLON        &kp PIPE          &hold_tap_f4 F4 NUMBER_4  &hold_tap_f5 F5 N5        &hold_tap_f6 F6 NUMBER_6  &hold_tap_f12 0 EQUAL   &none
 &none  &kp LEFT_SHIFT  &kp LEFT_BRACE        &kp UNDERSCORE     &kp RIGHT_BRACE        &kp GRAVE        &kp BACKSLASH     &hold_tap_f1 0 NUMBER_1   &hold_tap_f2 F2 NUMBER_2  &hold_tap_f3 F3 NUMBER_3  &kp SLASH               &none
                                              &trans             &trans                 &trans           &trans            &hold_tap_f10 0 N0        &trans
             >;
