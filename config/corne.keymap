@@ -20,7 +20,7 @@
     combos {
         compatible = "zmk,combos";
 
-        semicolon_combo {
+        semicolon_all {
             bindings = <&kp SEMI>;
             key-positions = <32 33>;
             layers = <0 2 1>;
@@ -36,6 +36,12 @@
             bindings = <&kp LA(BACKSPACE)>;
             key-positions = <40 19>;
             layers = <2>;
+        };
+
+        escape_all {
+            bindings = <&kp ESC>;
+            key-positions = <40 8>;
+            layers = <0 2 1>;
         };
     };
 
@@ -284,10 +290,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q             &kp W  &kp E         &kp R  &kp T               &kp Y      &kp U        &kp I         &kp O    &kp P                  &none
-&none  &kp A             &kp S  &kp D         &kp F  &kp G               &kp H      &kp J        &kp K         &kp L    &kp APOSTROPHE         &none
-&none  &mt LEFT_SHIFT Z  &kp X  &kp C         &kp V  &kp B               &kp N      &kp M        &kp COMMA     &kp DOT  &mt RIGHT_SHIFT SLASH  &none
-                                &kp LEFT_ALT  &mo 3  &kp LEFT_CONTROL    &kp ENTER  &lt 4 SPACE  &kp LEFT_GUI
+&none  &kp Q  &kp W  &kp E         &kp R  &kp T               &kp Y           &kp U        &kp I         &kp O    &kp P           &none
+&none  &kp A  &kp S  &kp D         &kp F  &kp G               &kp H           &kp J        &kp K         &kp L    &kp APOSTROPHE  &none
+&none  &kp Z  &kp X  &kp C         &kp V  &kp B               &kp N           &kp M        &kp COMMA     &kp DOT  &kp BACKSPACE   &none
+                     &kp LEFT_ALT  &mo 3  &kp LEFT_CONTROL    &kp LEFT_SHIFT  &lt 4 SPACE  &kp LEFT_GUI
             >;
 
             label = "windows";
@@ -295,10 +301,10 @@
 
         colemak-dh {
             bindings = <
-&none  &kp Q             &kp W  &kp F   &kp P   &kp B     &kp J   &kp L   &kp U      &kp Y    &kp APOSTROPHE         &none
-&none  &kp A             &kp R  &kp S   &kp T   &kp G     &kp M   &kp N   &kp E      &kp I    &kp O                  &none
-&none  &mt LEFT_SHIFT Z  &kp X  &kp C   &kp D   &kp V     &kp K   &kp H   &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH  &none
-                                &trans  &trans  &trans    &trans  &trans  &trans
+&none  &kp Q  &kp W  &kp F   &kp P   &kp B     &kp J   &kp L   &kp U      &kp Y    &kp APOSTROPHE  &none
+&none  &kp A  &kp R  &kp S   &kp T   &kp G     &kp M   &kp N   &kp E      &kp I    &kp O           &none
+&none  &kp Z  &kp X  &kp C   &kp D   &kp V     &kp K   &kp H   &kp COMMA  &kp DOT  &kp SLASH       &none
+                     &trans  &trans  &trans    &trans  &trans  &trans
             >;
 
             label = "colemak";
@@ -324,9 +330,9 @@
 
             bindings = <
 &none  &kp TAB         &kp LEFT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp RIGHT_PARENTHESIS  &kp LESS_THAN    &kp GREATER_THAN  &hold_tap_f7 F7 N7        &hold_tap_f8 F8 N8        &hold_tap_f9 F9 N9        &hold_tap_f10 F11 PLUS  &none
-&none  &kp BACKSPACE   &kp LEFT_BRACKET      &kp MINUS          &kp RIGHT_BRACKET      &kp COLON        &kp PIPE          &hold_tap_f4 F4 NUMBER_4  &hold_tap_f5 F5 N5        &hold_tap_f6 F6 NUMBER_6  &hold_tap_f11 0 EQUAL   &none
-&none  &kp LEFT_SHIFT  &kp LEFT_BRACE        &kp UNDERSCORE     &kp RIGHT_BRACE        &kp GRAVE        &kp BACKSLASH     &hold_tap_f1 0 NUMBER_1   &hold_tap_f2 F2 NUMBER_2  &hold_tap_f3 F3 NUMBER_3  &hold_tap_f12 0 SLASH   &none
-                                             &trans             &trans                 &trans           &kp ESC           &kp N0                    &trans
+&none  &kp LEFT_SHIFT  &kp LEFT_BRACKET      &kp MINUS          &kp RIGHT_BRACKET      &kp COLON        &kp PIPE          &hold_tap_f4 F4 NUMBER_4  &hold_tap_f5 F5 N5        &hold_tap_f6 F6 NUMBER_6  &hold_tap_f11 0 EQUAL   &none
+&none  &kp ESC         &kp LEFT_BRACE        &kp UNDERSCORE     &kp RIGHT_BRACE        &kp GRAVE        &kp BACKSLASH     &hold_tap_f1 0 NUMBER_1   &hold_tap_f2 F2 NUMBER_2  &hold_tap_f3 F3 NUMBER_3  &hold_tap_f12 0 SLASH   &none
+                                             &trans             &trans                 &trans           &kp ENTER         &kp N0                    &trans
             >;
 
             label = "symbols";
@@ -343,7 +349,7 @@
 &none  &none           &none  &none  &none  &none               &kp HOME        &kp TAB         &kp DELETE    &kp END          &kp PRINTSCREEN  &none
 &none  &none           &none  &none  &none  &none               &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp RIGHT_ALT    &none
 &none  &kp LEFT_SHIFT  &none  &none  &none  &none               &none           &kp PAGE_DOWN   &kp PAGE_UP   &none            &none            &none
-                              &none  &mo 6  &kp LEFT_CONTROL    &none           &none           &none
+                              &mo 6  &none  &kp LEFT_CONTROL    &none           &none           &none
             >;
 
             label = "win_nav";
@@ -354,7 +360,7 @@
 &none  &none           &none  &none  &none  &none           &kp LG(LEFT_ARROW)  &kp TAB         &kp DELETE    &kp LG(RIGHT_ARROW)  &kp LS(LG(NUMBER_4))  &none
 &none  &none           &none  &none  &none  &none           &kp LEFT_ARROW      &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW      &kp LEFT_GUI          &none
 &none  &kp LEFT_SHIFT  &none  &none  &none  &none           &none               &kp PAGE_DOWN   &kp PAGE_UP   &none                &none                 &none
-                              &none  &mo 6  &kp LEFT_ALT    &none               &none           &none
+                              &mo 6  &none  &kp LEFT_ALT    &none               &none           &none
             >;
 
             label = "mac_nav";
