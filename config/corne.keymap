@@ -9,11 +9,11 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
-&lt { tapping-term-ms = <170>; };
+&lt { tapping-term-ms = <160>; };
 
 &mt {
     flavor = "tap-preferred";
-    tapping-term-ms = <170>;
+    tapping-term-ms = <160>;
 };
 
 / {
@@ -167,6 +167,20 @@
 
             label = "tap_f12";
         };
+
+        alt_tab: alt_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp TAB>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "ALT_TAB";
+        };
     };
 
     behaviors {
@@ -302,10 +316,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q  &kp W  &kp E                 &kp R  &kp T               &kp Y          &kp U        &kp I                    &kp O    &kp P           &none
-&none  &kp A  &kp S  &kp D                 &kp F  &kp G               &kp H          &kp J        &kp K                    &kp L    &kp APOSTROPHE  &none
-&none  &kp Z  &kp X  &kp C                 &kp V  &kp B               &kp N          &kp M        &kp COMMA                &kp DOT  &kp SLASH       &none
-                     &mt LEFT_ALT LA(TAB)  &mo 3  &kp LEFT_CONTROL    &kp BACKSPACE  &lt 4 SPACE  &mt LEFT_GUI LG(PERIOD)
+&none  &kp Q             &kp W  &kp E                 &kp R  &kp T               &kp Y          &kp U        &kp I                    &kp O    &kp P                  &none
+&none  &kp A             &kp S  &kp D                 &kp F  &kp G               &kp H          &kp J        &kp K                    &kp L    &kp APOSTROPHE         &none
+&none  &mt LEFT_SHIFT Z  &kp X  &kp C                 &kp V  &kp B               &kp N          &kp M        &kp COMMA                &kp DOT  &mt RIGHT_SHIFT SLASH  &none
+                                &mt LEFT_ALT LA(TAB)  &mo 3  &kp LEFT_CONTROL    &kp BACKSPACE  &lt 4 SPACE  &mt LEFT_GUI LG(PERIOD)
             >;
 
             label = "windows";
@@ -313,10 +327,10 @@
 
         colemak-dh {
             bindings = <
-&none  &kp Q  &kp W  &kp F   &kp P   &kp B     &kp J   &kp L   &kp U      &kp Y    &kp APOSTROPHE  &none
-&none  &kp A  &kp R  &kp S   &kp T   &kp G     &kp M   &kp N   &kp E      &kp I    &kp O           &none
-&none  &kp Z  &kp X  &kp C   &kp D   &kp V     &kp K   &kp H   &kp COMMA  &kp DOT  &trans          &none
-                     &trans  &trans  &trans    &trans  &trans  &trans
+&none  &kp Q   &kp W  &kp F   &kp P   &kp B     &kp J   &kp L   &kp U      &kp Y    &kp APOSTROPHE  &none
+&none  &kp A   &kp R  &kp S   &kp T   &kp G     &kp M   &kp N   &kp E      &kp I    &kp O           &none
+&none  &trans  &kp X  &kp C   &kp D   &kp V     &kp K   &kp H   &kp COMMA  &kp DOT  &trans          &none
+                      &trans  &trans  &trans    &trans  &trans  &trans
             >;
 
             label = "colemak";
