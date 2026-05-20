@@ -362,8 +362,8 @@
 
             bindings = <
 &none  &kp TAB         &kp LEFT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp RIGHT_PARENTHESIS  &kp LESS_THAN    &kp GREATER_THAN  &hold_tap_f7 F7 N7        &hold_tap_f8 F8 N8        &hold_tap_f9 F9 N9        &hold_tap_f10 F11 PLUS     &none
-&none  &kp LEFT_SHIFT  &kp LEFT_BRACKET      &kp MINUS          &kp RIGHT_BRACKET      &kp COLON        &kp PIPE          &hold_tap_f4 F4 NUMBER_4  &hold_tap_f5 F5 N5        &hold_tap_f6 F6 NUMBER_6  &hold_tap_f11 0 EQUAL      &none
-&none  &kp GRAVE       &kp LEFT_BRACE        &kp UNDERSCORE     &kp RIGHT_BRACE        &kp TILDE        &kp BACKSLASH     &hold_tap_f1 0 NUMBER_1   &hold_tap_f2 F2 NUMBER_2  &hold_tap_f3 F3 NUMBER_3  &hold_tap_f12 0 SEMICOLON  &none
+&none  &kp GRAVE       &kp LEFT_BRACKET      &kp MINUS          &kp RIGHT_BRACKET      &kp COLON        &kp PIPE          &hold_tap_f4 F4 NUMBER_4  &hold_tap_f5 F5 N5        &hold_tap_f6 F6 NUMBER_6  &hold_tap_f11 0 EQUAL      &none
+&none  &kp LEFT_SHIFT  &kp LEFT_BRACE        &kp UNDERSCORE     &kp RIGHT_BRACE        &kp TILDE        &kp BACKSLASH     &hold_tap_f1 0 NUMBER_1   &hold_tap_f2 F2 NUMBER_2  &hold_tap_f3 F3 NUMBER_3  &hold_tap_f12 0 SEMICOLON  &none
                                              &trans             &trans                 &trans           &kp ENTER         &kp N0                    &kp PERIOD
             >;
 
@@ -379,8 +379,8 @@
 
             bindings = <
 &none  &kp ESC         &none  &none  &none  &none               &kp HOME        &kp TAB         &kp DELETE    &kp END          &kp PRINTSCREEN  &none
-&none  &kp LEFT_SHIFT  &none  &none  &none  &none               &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp RIGHT_ALT    &none
-&none  &none           &none  &none  &none  &none               &none           &kp PAGE_DOWN   &kp PAGE_UP   &none            &none            &none
+&none  &none           &none  &none  &none  &none               &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp RIGHT_ALT    &none
+&none  &kp LEFT_SHIFT  &none  &none  &none  &none               &none           &kp PAGE_DOWN   &kp PAGE_UP   &none            &none            &none
                               &mo 6  &none  &kp LEFT_CONTROL    &none           &none           &none
             >;
 
@@ -390,8 +390,8 @@
         mac_nav {
             bindings = <
 &none  &kp ESC         &none  &none  &none  &none           &kp LG(LEFT_ARROW)  &kp TAB         &kp DELETE    &kp LG(RIGHT_ARROW)  &kp LS(LG(NUMBER_4))  &none
-&none  &kp LEFT_SHIFT  &none  &none  &none  &none           &kp LEFT_ARROW      &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW      &kp LEFT_GUI          &none
-&none  &none           &none  &none  &none  &none           &none               &kp PAGE_DOWN   &kp PAGE_UP   &none                &none                 &none
+&none  &none           &none  &none  &none  &none           &kp LEFT_ARROW      &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW      &kp LEFT_GUI          &none
+&none  &kp LEFT_SHIFT  &none  &none  &none  &none           &none               &kp PAGE_DOWN   &kp PAGE_UP   &none                &none                 &none
                               &mo 6  &none  &kp LEFT_ALT    &none               &none           &none
             >;
 
