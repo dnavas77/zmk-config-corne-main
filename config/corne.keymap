@@ -44,9 +44,9 @@
             layers = <0 2 1>;
         };
 
-        tab_combo {
+        tab_all {
             bindings = <&kp TAB>;
-            key-positions = <14 15>;
+            key-positions = <15 16>;
             layers = <0 2 1>;
         };
     };
@@ -335,10 +335,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &kp TAB         &kp LEFT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp RIGHT_PARENTHESIS  &kp LESS_THAN    &kp GREATER_THAN  &hold_tap_f7 F7 N7        &hold_tap_f8 F8 N8        &hold_tap_f9 F9 N9        &hold_tap_f10 F11 PLUS     &none
-&none  &kp GRAVE       &kp LEFT_BRACKET      &kp MINUS          &kp RIGHT_BRACKET      &kp COLON        &kp PIPE          &hold_tap_f4 F4 NUMBER_4  &hold_tap_f5 F5 N5        &hold_tap_f6 F6 NUMBER_6  &hold_tap_f11 0 EQUAL      &none
-&none  &kp LEFT_SHIFT  &kp LEFT_BRACE        &kp UNDERSCORE     &kp RIGHT_BRACE        &kp TILDE        &kp BACKSLASH     &hold_tap_f1 0 NUMBER_1   &hold_tap_f2 F2 NUMBER_2  &hold_tap_f3 F3 NUMBER_3  &hold_tap_f12 0 SEMICOLON  &none
-                                             &trans             &trans                 &trans           &trans            &kp N0                    &kp PERIOD
+&none  &kp TAB         &kp LEFT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp RIGHT_PARENTHESIS  &kp LESS_THAN    &kp GREATER_THAN  &hold_tap_f7 F7 N7        &hold_tap_f8 F8 N8        &hold_tap_f9 F9 N9        &hold_tap_f10 F11 PLUS  &none
+&none  &kp MINUS       &kp LEFT_BRACKET      &kp GRAVE          &kp RIGHT_BRACKET      &kp COLON        &kp PIPE          &hold_tap_f4 F4 NUMBER_4  &hold_tap_f5 F5 N5        &hold_tap_f6 F6 NUMBER_6  &hold_tap_f11 0 EQUAL   &none
+&none  &kp LEFT_SHIFT  &kp LEFT_BRACE        &kp TILDE          &kp RIGHT_BRACE        &kp SEMICOLON    &kp BACKSLASH     &hold_tap_f1 0 NUMBER_1   &hold_tap_f2 F2 NUMBER_2  &hold_tap_f3 F3 NUMBER_3  &hold_tap_f12 0 SLASH   &none
+                                             &trans             &trans                 &trans           &kp UNDERSCORE    &kp N0                    &kp PERIOD
             >;
 
             label = "symbols";
