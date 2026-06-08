@@ -46,7 +46,7 @@
 
         bt_layer_combo {
             bindings = <&mo 6>;
-            key-positions = <3 37>;
+            key-positions = <37 15>;
             layers = <0 1 2>;
         };
 
