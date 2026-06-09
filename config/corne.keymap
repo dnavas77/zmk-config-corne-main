@@ -302,10 +302,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q  &kp W  &kp E         &kp R  &kp T               &kp Y           &kp U        &kp I         &kp O    &kp P           &none
-&none  &kp A  &kp S  &kp D         &kp F  &kp G               &kp H           &kp J        &kp K         &kp L    &kp APOSTROPHE  &none
-&none  &kp Z  &kp X  &kp C         &kp V  &kp B               &kp N           &kp M        &kp COMMA     &kp DOT  &kp SLASH       &none
-                     &kp LEFT_ALT  &mo 3  &kp LEFT_CONTROL    &sk LEFT_SHIFT  &lt 4 SPACE  &kp LEFT_GUI
+&none  &kp Q             &kp W  &kp E         &kp R  &kp T               &kp Y      &kp U        &kp I         &kp O    &kp P                  &none
+&none  &kp A             &kp S  &kp D         &kp F  &kp G               &kp H      &kp J        &kp K         &kp L    &kp APOSTROPHE         &none
+&none  &mt LEFT_SHIFT Z  &kp X  &kp C         &kp V  &kp B               &kp N      &kp M        &kp COMMA     &kp DOT  &mt RIGHT_SHIFT SLASH  &none
+                                &kp LEFT_ALT  &mo 3  &kp LEFT_CONTROL    &kp ENTER  &lt 4 SPACE  &kp LEFT_GUI
             >;
 
             label = "windows";
@@ -341,10 +341,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &kp TAB        &kp LEFT_PARENTHESIS           &kp ENTER  &kp RIGHT_PARENTHESIS         &kp ESCAPE       &kp TILDE         &kp N7        &kp N8        &kp N9        &kp PLUS       &none
-&none  &kp BACKSPACE  &mt LEFT_CONTROL LEFT_BRACKET  &kp MINUS  &mt LEFT_SHIFT RIGHT_BRACKET  &kp COLON        &kp PIPE          &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL      &none
-&none  &kp GRAVE      &kp LEFT_BRACE                 &kp UNDER  &kp RIGHT_BRACE               &kp LESS_THAN    &kp GREATER_THAN  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH  &none
-                                                     &trans     &trans                        &trans           &trans            &kp N0        &trans
+&none  &kp TAB        &kp LEFT_PARENTHESIS  &none      &kp RIGHT_PARENTHESIS  &kp GRAVE        &kp TILDE         &kp N7        &kp N8        &kp N9        &kp PLUS   &none
+&none  &kp BACKSPACE  &kp LEFT_BRACKET      &kp MINUS  &kp RIGHT_BRACKET      &kp COLON        &kp PIPE          &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL  &none
+&none  &kp BACKSLASH  &kp LEFT_BRACE        &kp UNDER  &kp RIGHT_BRACE        &kp LESS_THAN    &kp GREATER_THAN  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH  &none
+                                            &trans     &trans                 &trans           &trans            &kp N0        &trans
             >;
 
             label = "symbols";
