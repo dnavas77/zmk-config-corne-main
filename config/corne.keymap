@@ -44,8 +44,8 @@
             layers = <0 2 1>;
         };
 
-        bt_layer_combo {
-            bindings = <&mo 6>;
+        left_shift_all {
+            bindings = <&kp LEFT_SHIFT>;
             key-positions = <37 15>;
             layers = <0 1 2>;
         };
@@ -54,6 +54,18 @@
             bindings = <&kp ESCAPE>;
             key-positions = <2 3>;
             layers = <0 2 1>;
+        };
+
+        right_shift_all {
+            bindings = <&kp RIGHT_SHIFT>;
+            key-positions = <40 20>;
+            layers = <0 1 2>;
+        };
+
+        bt_symb_combo {
+            bindings = <&mo 6>;
+            key-positions = <37 16>;
+            layers = <0 1 2>;
         };
     };
 
@@ -302,10 +314,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q             &kp W  &kp E         &kp R  &kp T               &kp Y      &kp U        &kp I         &kp O    &kp P                  &none
-&none  &kp A             &kp S  &kp D         &kp F  &kp G               &kp H      &kp J        &kp K         &kp L    &kp APOSTROPHE         &none
-&none  &mt LEFT_SHIFT Z  &kp X  &kp C         &kp V  &kp B               &kp N      &kp M        &kp COMMA     &kp DOT  &mt RIGHT_SHIFT SLASH  &none
-                                &kp LEFT_ALT  &mo 3  &kp LEFT_CONTROL    &kp ENTER  &lt 4 SPACE  &kp LEFT_GUI
+&none  &kp Q  &kp W  &kp E         &kp R  &kp T               &kp Y      &kp U        &kp I         &kp O    &kp P           &none
+&none  &kp A  &kp S  &kp D         &kp F  &kp G               &kp H      &kp J        &kp K         &kp L    &kp APOSTROPHE  &none
+&none  &kp Z  &kp X  &kp C         &kp V  &kp B               &kp N      &kp M        &kp COMMA     &kp DOT  &kp SLASH       &none
+                     &kp LEFT_ALT  &mo 3  &kp LEFT_CONTROL    &kp ENTER  &lt 4 SPACE  &kp LEFT_GUI
             >;
 
             label = "windows";
