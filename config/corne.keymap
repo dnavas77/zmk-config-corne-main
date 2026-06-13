@@ -52,8 +52,8 @@
 
         esc_all {
             bindings = <&kp ESCAPE>;
-            key-positions = <2 3>;
-            layers = <0 2 1>;
+            key-positions = <3 37>;
+            layers = <0 2 1 4 5>;
         };
 
         right_shift_all {
