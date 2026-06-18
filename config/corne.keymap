@@ -38,16 +38,16 @@
             layers = <2>;
         };
 
-        tab_all {
-            bindings = <&kp TAB>;
+        esc_all {
+            bindings = <&kp ESCAPE>;
             key-positions = <15 14>;
             layers = <0 2 1>;
         };
 
-        esc_all {
-            bindings = <&kp ESCAPE>;
+        caps_all {
+            bindings = <&kp CAPSLOCK>;
             key-positions = <26 27>;
-            layers = <0 2 1 4 5>;
+            layers = <0 2 1>;
         };
 
         bt_symb_combo {
@@ -305,7 +305,7 @@
 &none  &kp Q  &kp W  &kp E         &kp R  &kp T               &kp Y           &kp U        &kp I         &kp O    &kp P           &none
 &none  &kp A  &kp S  &kp D         &kp F  &kp G               &kp H           &kp J        &kp K         &kp L    &kp APOSTROPHE  &none
 &none  &kp Z  &kp X  &kp C         &kp V  &kp B               &kp N           &kp M        &kp COMMA     &kp DOT  &kp SLASH       &none
-                     &kp LEFT_ALT  &mo 3  &kp LEFT_CONTROL    &sk LEFT_SHIFT  &lt 4 SPACE  &kp LEFT_GUI
+                     &kp LEFT_GUI  &mo 3  &kp LEFT_CONTROL    &sk LEFT_SHIFT  &lt 4 SPACE  &kp LEFT_ALT
             >;
 
             label = "windows";
@@ -341,9 +341,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &kp TILDE             &kp LEFT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp RIGHT_PARENTHESIS         &kp LESS_THAN    &kp GREATER_THAN  &kp N7        &kp N8        &kp N9        &kp PLUS   &none
+&none  &kp TAB               &kp LEFT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp RIGHT_PARENTHESIS         &kp LESS_THAN    &kp GREATER_THAN  &kp N7        &kp N8        &kp N9        &kp PLUS   &none
 &none  &kp BACKSPACE         &kp LEFT_BRACKET      &kp MINUS          &kp RIGHT_BRACKET             &kp COLON        &kp PIPE          &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL  &none
-&none  &mt LEFT_SHIFT GRAVE  &kp LEFT_BRACE        &kp UNDER          &mt LEFT_CONTROL RIGHT_BRACE  &kp CAPSLOCK     &kp BACKSLASH     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH  &none
+&none  &mt LEFT_SHIFT GRAVE  &kp LEFT_BRACE        &kp UNDER          &mt LEFT_CONTROL RIGHT_BRACE  &kp TILDE        &kp BACKSLASH     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH  &none
                                                    &trans             &trans                        &trans           &kp ENTER         &kp N0        &trans
             >;
 
@@ -358,9 +358,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &none           &kp AMPERSAND    &kp ASTERISK  &none      &none               &kp HOME        &none           &none         &kp END          &kp PRINTSCREEN  &none
-&none  &none           &kp DOLLAR       &kp PERCENT   &kp CARET  &none               &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp DELETE       &none
-&none  &kp LEFT_SHIFT  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH   &none               &none           &kp PAGE_DOWN   &kp PAGE_UP   &none            &none            &none
+&none  &none           &kp AMPERSAND    &kp ASTERISK  &none      &none               &kp HOME        &none           &none         &kp END          &kp PRINTSCREEN     &none
+&none  &none           &kp DOLLAR       &kp PERCENT   &kp CARET  &none               &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp DELETE          &none
+&none  &kp LEFT_SHIFT  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH   &none               &none           &kp PAGE_DOWN   &kp PAGE_UP   &none            &kp LA(LC(DELETE))  &none
                                         &mo 6         &none      &kp LEFT_CONTROL    &none           &none           &none
             >;
 
