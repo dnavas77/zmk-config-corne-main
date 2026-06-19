@@ -46,7 +46,7 @@
 
         caps_all {
             bindings = <&kp CAPSLOCK>;
-            key-positions = <26 27>;
+            key-positions = <16 15>;
             layers = <0 2 1>;
         };
 
