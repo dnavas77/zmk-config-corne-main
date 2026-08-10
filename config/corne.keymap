@@ -339,7 +339,7 @@
 &none  &kp TAB        &kp LEFT_PARENTHESIS  &kp LEFT_ALT  &kp RIGHT_PARENTHESIS  &kp LESS_THAN    &kp GREATER_THAN  &kp N7        &kp N8        &kp N9        &kp PLUS   &none
 &none  &kp BACKSPACE  &kp LEFT_BRACKET      &kp MINUS     &kp RIGHT_BRACKET      &kp COLON        &kp PIPE          &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL  &none
 &none  &kp GRAVE      &kp LEFT_BRACE        &kp UNDER     &kp RIGHT_BRACE        &kp TILDE        &kp BACKSLASH     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH  &none
-                                            &trans        &trans                 &trans           &trans            &kp N0        &trans
+                                            &trans        &trans                 &trans           &trans            &kp N0        &kp PERIOD
             >;
 
             label = "nums_win";
@@ -351,7 +351,7 @@
 &none  &kp TAB        &kp LEFT_PARENTHESIS  &kp LEFT_GUI  &kp RIGHT_PARENTHESIS  &kp LESS_THAN    &kp GREATER_THAN  &kp N7        &kp N8        &kp N9        &kp PLUS   &none
 &none  &kp BACKSPACE  &kp LEFT_BRACKET      &kp MINUS     &kp RIGHT_BRACKET      &kp COLON        &kp PIPE          &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL  &none
 &none  &kp GRAVE      &kp LEFT_BRACE        &kp UNDER     &kp RIGHT_BRACE        &kp TILDE        &kp BACKSLASH     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH  &none
-                                            &trans        &trans                 &trans           &trans            &kp N0        &trans
+                                            &trans        &trans                 &trans           &trans            &kp N0        &kp PERIOD
             >;
         };
 
